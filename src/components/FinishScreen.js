@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { QuizContext } from "./App";
+import RestartButton from "./RestartButton";
 
 export default function FinishScreen() {
   const { points, maxPossiblePoints, highscore, dispatch } =
@@ -15,12 +16,7 @@ export default function FinishScreen() {
         </strong>
       </p>
       <p className="highscore">(Highscore: {highscore} points)</p>
-      <button
-        className="btn btn-ui"
-        onClick={() => dispatch({ type: "restart" })}
-      >
-        Restart
-      </button>
+      <RestartButton />
     </>
   );
 }
