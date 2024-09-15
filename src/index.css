@@ -265,3 +265,47 @@ progress {
   width: 100%;
   padding: 1.6rem 0;
 }
+
+/* Container for the select dropdown */
+.difficulty-container {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Label styling */
+.difficulty-container label {
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+  color: var(--color-light);
+}
+
+/* Styling for the select dropdown */
+.difficulty-container select {
+  font-family: inherit;
+  font-size: 2rem;
+  color: var(--color-light);
+  border: 2px solid var(--color-dark);
+  background-color: var(--color-dark);
+  border-radius: 100px;
+  padding: 0.8rem 1.8rem;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Hover and focus states for the select dropdown */
+.difficulty-container select:hover,
+.difficulty-container select:focus {
+  background-color: var(--color-darkest);
+  border-color: var(--color-theme);
+  outline: none; /* Removes default focus outline */
+}
+
+/* Styling for disabled state */
+.difficulty-container select:disabled {
+  background-color: var(--color-dark);
+  color: var(--color-medium);
+  cursor: not-allowed;
+}

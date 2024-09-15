@@ -17,12 +17,22 @@ import {
   SECS_PER_QUESTION,
 } from "../functionality/reducer";
 import RestartButton from "./RestartButton";
+import Difficulty from "./Difficulty";
 
 export const QuizContext = createContext();
 
 function App() {
   const [
-    { questions, status, index, answer, points, highscore, secondsRemaining },
+    {
+      questions,
+      status,
+      index,
+      answer,
+      points,
+      highscore,
+      secondsRemaining,
+      difficulty,
+    },
     dispatch,
   ] = useReducer(reducer, initialState);
 
@@ -32,12 +42,15 @@ function App() {
     0
   );
 
-  useEffect(function () {
-    fetch("http://localhost:9000/questions")
-      .then((res) => res.json())
-      .then((data) => dispatch({ type: "dataReceived", payload: data }))
-      .catch((err) => dispatch({ type: "dataFailed" }));
-  }, []);
+  useEffect(
+    function () {
+      fetch(`http://localhost:9000/${difficulty}`)
+        .then((res) => res.json())
+        .then((data) => dispatch({ type: "dataReceived", payload: data }))
+        .catch((err) => dispatch({ type: "dataFailed" }));
+    },
+    [difficulty]
+  );
 
   return (
     <QuizContext.Provider

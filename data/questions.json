@@ -1,138 +1,458 @@
 {
-  "questions": [
+  "easy": [
     {
-      "question": "Which is the most popular JavaScript framework?",
-      "options": ["Angular", "React", "Svelte", "Vue"],
+      "question": "What does HTML stand for?",
+      "options": [
+        "HyperText Markup Language",
+        "HighText Machine Language",
+        "HyperText Markup Language",
+        "HighText Machine Language"
+      ],
+      "correctOption": 0,
+      "points": 5
+    },
+    {
+      "question": "Which tag is used to create a hyperlink in HTML?",
+      "options": ["<link>", "<a>", "<hyper>", "<url>"],
       "correctOption": 1,
-      "points": 10
+      "points": 5
     },
     {
-      "question": "Which company invented React?",
-      "options": ["Google", "Apple", "Netflix", "Facebook"],
-      "correctOption": 3,
-      "points": 10
+      "question": "What does CSS stand for?",
+      "options": [
+        "Cascading Style Sheets",
+        "Colorful Style Sheets",
+        "Computer Style Sheets",
+        "Creative Style Sheets"
+      ],
+      "correctOption": 0,
+      "points": 5
     },
     {
-      "question": "What's the fundamental building block of React apps?",
-      "options": ["Components", "Blocks", "Elements", "Effects"],
+      "question": "Which property is used to change the background color in CSS?",
+      "options": ["bgcolor", "background-color", "color", "background"],
+      "correctOption": 1,
+      "points": 5
+    },
+    {
+      "question": "Which HTML element is used for the largest heading?",
+      "options": ["<h1>", "<head>", "<heading>", "<h6>"],
+      "correctOption": 0,
+      "points": 5
+    },
+    {
+      "question": "What does the 'float' property do in CSS?",
+      "options": [
+        "Positions an element to the left or right",
+        "Centers an element",
+        "Changes text color",
+        "Sets the height of an element"
+      ],
+      "correctOption": 0,
+      "points": 5
+    },
+    {
+      "question": "What is the purpose of the 'alt' attribute in an image tag?",
+      "options": [
+        "To provide alternative text for the image",
+        "To set the image source",
+        "To define the image size",
+        "To add a link to the image"
+      ],
+      "correctOption": 0,
+      "points": 5
+    },
+    {
+      "question": "Which HTML tag is used to define an unordered list?",
+      "options": ["<ul>", "<ol>", "<li>", "<list>"],
+      "correctOption": 0,
+      "points": 5
+    },
+    {
+      "question": "How do you insert a comment in a CSS file?",
+      "options": [
+        "// Comment",
+        "<!-- Comment -->",
+        "/* Comment */",
+        "-- Comment --"
+      ],
+      "correctOption": 2,
+      "points": 5
+    },
+    {
+      "question": "Which HTML element is used to define a table row?",
+      "options": ["<tr>", "<td>", "<th>", "<table>"],
+      "correctOption": 0,
+      "points": 5
+    },
+    {
+      "question": "How do you create a checkbox input in HTML?",
+      "options": [
+        "<checkbox>",
+        "<input type='checkbox'>",
+        "<input type='check'>",
+        "<select>"
+      ],
+      "correctOption": 1,
+      "points": 5
+    },
+    {
+      "question": "Which CSS pseudo-class applies styles to an element when the mouse is over it?",
+      "options": [":hover", ":focus", ":active", ":visited"],
+      "correctOption": 0,
+      "points": 5
+    },
+    {
+      "question": "What is the correct syntax for adding a comment in HTML?",
+      "options": [
+        "<!-- Comment -->",
+        "// Comment",
+        "/* Comment */",
+        "-- Comment --"
+      ],
+      "correctOption": 0,
+      "points": 5
+    },
+    {
+      "question": "How do you create a number input field in HTML?",
+      "options": [
+        "<input type='number'>",
+        "<input type='num'>",
+        "<input type='digit'>",
+        "<input type='quantity'>"
+      ],
+      "correctOption": 0,
+      "points": 5
+    },
+    {
+      "question": "Which CSS property controls the text color of an element?",
+      "options": ["color", "text-color", "background-color", "font-color"],
+      "correctOption": 0,
+      "points": 5
+    }
+  ],
+  "medium": [
+    {
+      "question": "How can you apply a CSS class to an HTML element?",
+      "options": [
+        "class='className'",
+        "style='className'",
+        "id='className'",
+        "className='className'"
+      ],
       "correctOption": 0,
       "points": 10
     },
     {
-      "question": "What's the name of the syntax we use to describe the UI in React components?",
-      "options": ["FBJ", "Babel", "JSX", "ES2015"],
-      "correctOption": 2,
+      "question": "What is the default value of the 'position' property in CSS?",
+      "options": ["static", "relative", "absolute", "fixed"],
+      "correctOption": 0,
       "points": 10
     },
     {
-      "question": "How does data flow naturally in React apps?",
+      "question": "What does the 'z-index' property do in CSS?",
       "options": [
-        "From parents to children",
-        "From children to parents",
-        "Both ways",
-        "The developers decides"
+        "Controls the stacking order of elements",
+        "Sets the size of an element",
+        "Changes the font size",
+        "Adjusts the margin"
       ],
       "correctOption": 0,
       "points": 10
     },
     {
-      "question": "How to pass data into a child component?",
-      "options": ["State", "Props", "PropTypes", "Parameters"],
+      "question": "Which method is used to select an element by its class in JavaScript?",
+      "options": [
+        "document.getElementByClass()",
+        "document.querySelector()",
+        "document.getElementById()",
+        "document.getClass()"
+      ],
       "correctOption": 1,
       "points": 10
     },
     {
-      "question": "When to use derived state?",
+      "question": "How can you add a new item to an array in JavaScript?",
       "options": [
-        "Whenever the state should not trigger a re-render",
-        "Whenever the state can be synchronized with an effect",
-        "Whenever the state should be accessible to all components",
-        "Whenever the state can be computed from another state variable"
+        "array.add()",
+        "array.push()",
+        "array.insert()",
+        "array.append()"
       ],
-      "correctOption": 3,
-      "points": 30
+      "correctOption": 1,
+      "points": 10
     },
     {
-      "question": "What triggers a UI re-render in React?",
+      "question": "What is the purpose of the 'this' keyword in JavaScript?",
       "options": [
-        "Running an effect",
-        "Passing props",
-        "Updating state",
-        "Adding event listeners to DOM elements"
+        "Refers to the current object",
+        "Refers to the global object",
+        "Refers to the parent object",
+        "Refers to a specific function"
       ],
-      "correctOption": 2,
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What does the 'map()' method do in JavaScript?",
+      "options": [
+        "Transforms each element in an array",
+        "Filters elements in an array",
+        "Sorts elements in an array",
+        "Finds the first element in an array"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which HTML5 API allows you to store data locally in the browser?",
+      "options": ["LocalStorage", "SessionStorage", "WebSQL", "IndexedDB"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is a promise in JavaScript?",
+      "options": [
+        "An object that represents the eventual completion or failure of an asynchronous operation",
+        "A function that performs a synchronous operation",
+        "A variable that holds a value",
+        "A method that handles errors"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the use of the 'async' keyword in JavaScript?",
+      "options": [
+        "To define an asynchronous function",
+        "To create a synchronous function",
+        "To handle errors",
+        "To execute code in parallel"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "How do you check if a variable is an array in JavaScript?",
+      "options": [
+        "Array.isArray(variable)",
+        "variable.isArray()",
+        "variable instanceof Array",
+        "CheckArray(variable)"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the 'bind()' method in JavaScript?",
+      "options": [
+        "Creates a new function with a specific `this` value",
+        "Binds two arrays together",
+        "Creates a new object",
+        "Handles asynchronous operations"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "How do you handle exceptions in JavaScript?",
+      "options": [
+        "try...catch",
+        "handleException()",
+        "throw...catch",
+        "catchException()"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the output of 'typeof NaN' in JavaScript?",
+      "options": ["number", "NaN", "undefined", "object"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the result of '0.1 + 0.2 === 0.3' in JavaScript?",
+      "options": ["false", "true", "undefined", "NaN"],
+      "correctOption": 0,
+      "points": 10
+    }
+  ],
+  "hard": [
+    {
+      "question": "What is the Virtual DOM in React?",
+      "options": [
+        "A lightweight copy of the actual DOM",
+        "A method for directly manipulating the DOM",
+        "A server-side rendering technique",
+        "A storage mechanism for components"
+      ],
+      "correctOption": 0,
       "points": 20
     },
     {
-      "question": "When do we directly \"touch\" the DOM in React?",
+      "question": "How does React's reconciliation algorithm work?",
       "options": [
-        "When we need to listen to an event",
-        "When we need to change the UI",
-        "When we need to add styles",
-        "Almost never"
+        "By comparing the current Virtual DOM with the previous one",
+        "By comparing the actual DOM with the Virtual DOM",
+        "By using a database to store component states",
+        "By rendering all components from scratch"
       ],
-      "correctOption": 3,
+      "correctOption": 0,
       "points": 20
     },
     {
-      "question": "In what situation do we use a callback to update state?",
+      "question": "What is the purpose of the 'useMemo' hook in React?",
       "options": [
-        "When updating the state will be slow",
-        "When the updated state is very data-intensive",
-        "When the state update should happen faster",
-        "When the new state depends on the previous state"
-      ],
-      "correctOption": 3,
-      "points": 30
-    },
-    {
-      "question": "If we pass a function to useState, when will that function be called?",
-      "options": [
-        "On each re-render",
-        "Each time we update the state",
-        "Only on the initial render",
-        "The first time we update the state"
-      ],
-      "correctOption": 2,
-      "points": 30
-    },
-    {
-      "question": "Which hook to use for an API request on the component's initial render?",
-      "options": ["useState", "useEffect", "useRef", "useReducer"],
-      "correctOption": 1,
-      "points": 10
-    },
-    {
-      "question": "Which variables should go into the useEffect dependency array?",
-      "options": [
-        "Usually none",
-        "All our state variables",
-        "All state and props referenced in the effect",
-        "All variables needed for clean up"
-      ],
-      "correctOption": 2,
-      "points": 30
-    },
-    {
-      "question": "An effect will always run on the initial render.",
-      "options": [
-        "True",
-        "It depends on the dependency array",
-        "False",
-        "In depends on the code in the effect"
+        "To memoize expensive calculations",
+        "To handle side effects",
+        "To manage component state",
+        "To perform asynchronous operations"
       ],
       "correctOption": 0,
-      "points": 30
+      "points": 20
     },
     {
-      "question": "When will an effect run if it doesn't have a dependency array?",
+      "question": "What is the difference between 'useEffect' and 'useLayoutEffect' in React?",
       "options": [
-        "Only when the component mounts",
-        "Only when the component unmounts",
-        "The first time the component re-renders",
-        "Each time the component is re-rendered"
+        "'useLayoutEffect' fires synchronously after all DOM mutations",
+        "'useEffect' fires synchronously after all DOM mutations",
+        "'useLayoutEffect' fires asynchronously",
+        "'useEffect' does not run after all DOM mutations"
       ],
-      "correctOption": 3,
+      "correctOption": 0,
+      "points": 20
+    },
+    {
+      "question": "What is 'context' used for in React?",
+      "options": [
+        "To pass data deeply through the component tree without prop drilling",
+        "To manage component state",
+        "To handle side effects",
+        "To create animations"
+      ],
+      "correctOption": 0,
+      "points": 20
+    },
+    {
+      "question": "How can you optimize performance in a React application?",
+      "options": [
+        "By using React.memo and useCallback",
+        "By avoiding functional components",
+        "By using inline styles",
+        "By rendering components directly to the DOM"
+      ],
+      "correctOption": 0,
+      "points": 20
+    },
+    {
+      "question": "What are 'Higher-Order Components' (HOCs) in React?",
+      "options": [
+        "Functions that take a component and return a new component",
+        "Components that render other components",
+        "Components that manage state",
+        "Components that handle side effects"
+      ],
+      "correctOption": 0,
+      "points": 20
+    },
+    {
+      "question": "What does the 'useReducer' hook do in React?",
+      "options": [
+        "Manages state with a reducer function",
+        "Creates a new component",
+        "Handles side effects",
+        "Memoizes expensive calculations"
+      ],
+      "correctOption": 0,
+      "points": 20
+    },
+    {
+      "question": "What is server-side rendering (SSR) in React?",
+      "options": [
+        "Rendering React components on the server and sending HTML to the client",
+        "Rendering React components in the client only",
+        "Rendering components using WebAssembly",
+        "Rendering components using CSS"
+      ],
+      "correctOption": 0,
+      "points": 20
+    },
+    {
+      "question": "What are React Hooks?",
+      "options": [
+        "Functions that let you use state and other React features without writing a class",
+        "Components that handle state management",
+        "Methods for manipulating the DOM",
+        "Libraries for handling asynchronous operations"
+      ],
+      "correctOption": 0,
+      "points": 20
+    },
+    {
+      "question": "What is a React Fragment used for?",
+      "options": [
+        "To group a list of children without adding extra nodes to the DOM",
+        "To manage component state",
+        "To handle side effects",
+        "To add styling to components"
+      ],
+      "correctOption": 0,
+      "points": 20
+    },
+    {
+      "question": "What is 'React.StrictMode' used for?",
+      "options": [
+        "To highlight potential problems in an application",
+        "To optimize the performance of React components",
+        "To manage global state",
+        "To handle asynchronous operations"
+      ],
+      "correctOption": 0,
+      "points": 20
+    },
+    {
+      "question": "What does the 'useCallback' hook do in React?",
+      "options": [
+        "Returns a memoized callback function",
+        "Returns a memoized state value",
+        "Handles side effects",
+        "Creates a new component"
+      ],
+      "correctOption": 0,
+      "points": 20
+    },
+    {
+      "question": "How do you handle events in React?",
+      "options": [
+        "By using event handler props like onClick, onChange, etc.",
+        "By using traditional DOM event listeners",
+        "By using the 'addEventListener' method",
+        "By directly manipulating the DOM"
+      ],
+      "correctOption": 0,
+      "points": 20
+    },
+    {
+      "question": "What is 'React.lazy()' used for?",
+      "options": [
+        "To dynamically import components and enable code splitting",
+        "To handle side effects",
+        "To manage state",
+        "To optimize rendering performance"
+      ],
+      "correctOption": 0,
+      "points": 20
+    },
+    {
+      "question": "What does the 'useImperativeHandle' hook do in React?",
+      "options": [
+        "Customizes the instance value that is exposed when using refs",
+        "Handles side effects",
+        "Manages component state",
+        "Provides a memoized value"
+      ],
+      "correctOption": 0,
       "points": 20
     }
   ]

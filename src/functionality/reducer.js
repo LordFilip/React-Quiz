@@ -2,12 +2,13 @@ export const SECS_PER_QUESTION = 30;
 
 export const initialState = {
   questions: [],
-  status: "loading",
+  status: "ready",
   index: 0,
   answer: null,
   points: 0,
   highscore: 0,
   secondsRemaining: null,
+  difficulty: "easy",
 };
 
 export function reducer(state, action) {
@@ -23,6 +24,11 @@ export function reducer(state, action) {
         ...state,
         status: "error",
       };
+    case "setDifficulty":
+      return {
+        ...state,
+        difficulty: action.payload,
+      };
     case "start":
       return {
         ...state,
@@ -36,7 +42,7 @@ export function reducer(state, action) {
         answer: action.payload,
         points:
           action.payload === question.correctOption
-            ? state.points + 1
+            ? state.points + question.points
             : state.points,
       };
     case "nextQuestion":
