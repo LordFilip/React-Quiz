@@ -1,6 +1,8 @@
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
+import { QuizContext } from "./App";
 
-export default function Timer({ dispatch, secondsRemaining }) {
+export default function Timer() {
+  const { dispatch, secondsRemaining } = useContext(QuizContext);
   const mins = Math.floor(secondsRemaining / 60);
   const secs = secondsRemaining % 60;
 
@@ -10,7 +12,7 @@ export default function Timer({ dispatch, secondsRemaining }) {
     }, 1000);
 
     return () => clearInterval(id);
-  }, [dispatch, secondsRemaining]); // Include `secondsRemaining` in the dependency array
+  }, [dispatch]);
 
   return (
     <div className="timer">

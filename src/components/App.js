@@ -1,4 +1,4 @@
-import { useEffect, useReducer } from "react";
+import React, { useEffect, useReducer, createContext } from "react";
 import Header from "./Header";
 import Main from "./Main";
 import Loader from "./Loader";
@@ -11,6 +11,8 @@ import Progress from "./Progress";
 import FinishScreen from "./FinishScreen";
 import Timer from "./Timer";
 import Footer from "./Footer";
+
+export const QuizContext = createContext();
 
 const SECS_PER_QUESTION = 30;
 
@@ -97,49 +99,41 @@ function App() {
   }, []);
 
   return (
-    <div className="app">
-      <Header />
-      <Main className="main">
-        {status === "loading" && <Loader />}
-        {status === "error" && <Error />}
-        {status === "ready" && (
-          <StartScreen numQuestions={numQuestions} dispatch={dispatch} />
-        )}
-        {status === "active" && (
-          <>
-            <Progress
-              index={index}
-              numQuestions={numQuestions}
-              points={points}
-              maxPossiblePoints={maxPossiblePoints}
-              answer={answer}
-            />
-            <Question
-              question={questions[index]}
-              dispatch={dispatch}
-              answer={answer}
-            />
-            <Footer>
-              <Timer dispatch={dispatch} secondsRemaining={secondsRemaining} />
-              <NextButton
-                dispatch={dispatch}
-                answer={answer}
-                index={index}
-                numQuestions={numQuestions}
-              ></NextButton>
-            </Footer>
-          </>
-        )}
-        {status === "finished" && (
-          <FinishScreen
-            points={points}
-            maxPossiblePoints={maxPossiblePoints}
-            highscore={highscore}
-            dispatch={dispatch}
-          />
-        )}
-      </Main>
-    </div>
+    <QuizContext.Provider
+      value={{
+        numQuestions,
+        questions,
+        status,
+        index,
+        answer,
+        points,
+        highscore,
+        secondsRemaining,
+        maxPossiblePoints,
+        reducer,
+        dispatch,
+      }}
+    >
+      <div className="app">
+        <Header />
+        <Main className="main">
+          {status === "loading" && <Loader />}
+          {status === "error" && <Error />}
+          {status === "ready" && <StartScreen />}
+          {status === "active" && (
+            <>
+              <Progress />
+              <Question />
+              <Footer>
+                <Timer />
+                <NextButton></NextButton>
+              </Footer>
+            </>
+          )}
+          {status === "finished" && <FinishScreen />}
+        </Main>
+      </div>
+    </QuizContext.Provider>
   );
 }
 

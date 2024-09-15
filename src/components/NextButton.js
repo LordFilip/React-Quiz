@@ -1,4 +1,8 @@
-export default function NextButton({ dispatch, answer, numQuestions, index }) {
+import { useContext } from "react";
+import { QuizContext } from "./App";
+
+export default function NextButton() {
+  const { dispatch, answer, numQuestions, index } = useContext(QuizContext);
   if (answer === null) {
     return null;
   }
