@@ -1,4 +1,14 @@
 :root {
+  --color-darkest: #f8f9fa;
+  --color-dark: #dee2e6;
+  --color-medium: #868e96;
+  --color-light: #343a40;
+
+  --color-theme: #0d6efd;
+  --color-accent: #ff6b6b;
+}
+
+:root.dark-theme {
   --color-darkest: #343a40;
   --color-dark: #495057;
   --color-medium: #ced4da;
@@ -242,8 +252,6 @@ progress {
   }
 }
 
-/* ********** */
-/* First counter example */
 .counter {
   display: flex;
   flex-direction: column;
@@ -266,7 +274,6 @@ progress {
   padding: 1.6rem 0;
 }
 
-/* Container for the select dropdown */
 .difficulty-container {
   margin-bottom: 2rem;
   display: flex;
@@ -274,7 +281,6 @@ progress {
   align-items: center;
 }
 
-/* Label styling */
 .difficulty-container label {
   font-size: 2.2rem;
   font-weight: 500;
@@ -282,7 +288,6 @@ progress {
   color: var(--color-light);
 }
 
-/* Styling for the select dropdown */
 .difficulty-container select {
   font-family: inherit;
   font-size: 2rem;
@@ -295,17 +300,18 @@ progress {
   transition: background-color 0.3s, border-color 0.3s;
 }
 
-/* Hover and focus states for the select dropdown */
 .difficulty-container select:hover,
 .difficulty-container select:focus {
   background-color: var(--color-darkest);
   border-color: var(--color-theme);
-  outline: none; /* Removes default focus outline */
+  outline: none;
 }
 
-/* Styling for disabled state */
 .difficulty-container select:disabled {
   background-color: var(--color-dark);
   color: var(--color-medium);
   cursor: not-allowed;
+}
+.btn-switch {
+  margin-top: 2vh;
 }
