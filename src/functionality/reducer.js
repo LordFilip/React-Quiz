@@ -9,6 +9,7 @@ export const initialState = {
   highscore: 0,
   secondsRemaining: null,
   difficulty: "easy",
+  selected: false,
 };
 
 export function reducer(state, action) {
@@ -28,6 +29,7 @@ export function reducer(state, action) {
       return {
         ...state,
         difficulty: action.payload,
+        selected: true,
       };
     case "start":
       return {

@@ -4,6 +4,7 @@ import { QuizContext } from "./App";
 
 export default function Difficulty() {
   const { difficulty, dispatch } = useContext(QuizContext);
+  let { selected } = useContext(QuizContext);
   const [difficulty_, setDifficulty] = useState(difficulty || "");
 
   const handleChange = (event) => {

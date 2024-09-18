@@ -32,6 +32,7 @@ function App() {
       highscore,
       secondsRemaining,
       difficulty,
+      selected,
     },
     dispatch,
   ] = useReducer(reducer, initialState);
@@ -66,6 +67,7 @@ function App() {
         maxPossiblePoints,
         reducer,
         dispatch,
+        selected,
       }}
     >
       <div className="app">
